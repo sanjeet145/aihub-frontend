@@ -1,0 +1,28 @@
+
+:root {
+    --color1: #2c3e41;
+    --color2: #d5d5d5;
+    --color3: #E56B6F;
+    --color5: #1B3358;
+}
+body{
+    margin:0;
+    padding:0;
+    /* background: var(--color2); */
+    background: #0A192F;
+    color: white;
+    /* center  linear-gradient(135deg, #0A192F, #1E90FF) no-repeat; */
+}
+
+
+/* deep blue -> neon  cyan */
+/* background: linear-gradient(135deg, #0A1F44, #00F5FF);  */
+
+/* navy blue electric blue */
+/* background: linear-gradient(135deg, #0A192F, #1E90FF); */
+
+/* deep blue purple cyan */
+/* background: linear-gradient(135deg, #0A1F44, #6A0DAD, #00F5FF); */
+
+/* black blue cyan */
+/* background: linear-gradient(135deg, #000000, #0A1F44, #00F5FF); */

@@ -1,0 +1,40 @@
+.navbar{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+.logo{
+    width: 20%;
+}
+.nav-btns {
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    padding-right: 1%;
+}
+
+.nav-btns::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 105%;
+    width: 2px; 
+    background: rgb(171, 171, 171);
+    transform: rotate(20deg); 
+    transform-origin: top left;
+}
+
+.nav-btn{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}

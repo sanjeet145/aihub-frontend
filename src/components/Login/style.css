@@ -1,0 +1,158 @@
+:root {
+    --color1: #2c3e41;
+    --color2: #d5d5d5;
+    --color3: #E56B6F;
+    --color5: #1B3358;
+}
+
+.login-register{
+    position: relative;
+    /* background-color: var(--color2); */
+    color: black;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container {
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: 35px;
+    display: flex;
+    position: relative;
+
+    h1 {
+        text-align: center;
+        background: -webkit-linear-gradient(180deg, #4cadbc, #033945);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    img {
+        position: absolute;
+        height: 500px;
+        left: 2px;
+    }
+
+    .card {
+        display: flex;
+        padding: 10px 20px;
+        border-radius: 38px;
+        border-bottom-left-radius: 0px;
+        margin-left: 200px;
+        background-color: var(--color2);
+        width: 300px;
+        height: 468px;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s ease-in;
+
+        a {
+            font-weight: bolder;
+            color: var(--color5);
+            cursor: pointer;
+        }
+
+        .login {
+
+            p {
+                bottom: 200px;
+                position: absolute;
+            }
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+
+        input {
+            outline: 0;
+            border: 0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        #number {
+            padding-left: 20px;
+        }
+
+        #password {
+            padding-left: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: right;
+
+            button {
+                width: 80px;
+                height: 30px;
+                outline: 0;
+                border: 1px solid var(--color1);
+                border-radius: 5px;
+                font-weight: bold;
+                background-color: #8598A7;
+                color: #fff;
+
+            }
+
+            button:hover {
+                background-color: transparent;
+                color: var(--color1);
+            }
+        }
+    }
+    .google-login{
+        margin-top: 70px;
+    }
+}
+
+@media (max-width:500px) {
+    .container img {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        padding: 5px;
+
+        .card {
+            margin: 0;
+            border-radius: 38px;
+        }
+
+        form {
+
+            #number,
+            #password {
+                padding: 5px 10px;
+            }
+
+        }
+    }
+}
+
+
+.message {
+    position: fixed;
+    top: 0;
+    left: -500px;
+    background-color: #b5192b;
+    color: #fff;
+    padding: 10px;
+    height: 50px;
+    min-width: 100px;
+    width: fit-content;
+    border-bottom-right-radius: 10px;
+    font-size: 25px;
+    text-transform: capitalize;
+    transition: all 0.5s ease-in;
+}

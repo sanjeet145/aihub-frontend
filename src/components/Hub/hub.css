@@ -1,0 +1,33 @@
+.hub-heading{
+    display: flex;
+    justify-content: center;
+}
+.model-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 0 10px;
+}
+
+.model-card {
+    min-height: 150px;
+    padding: 5px;
+    background-color: rgb(230, 227, 227);
+    color: black;
+    flex: 1 1 250px;
+    min-width: 250px;
+    max-width: 300px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.model-card-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
