@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './maternal.css';
+import Cookie from 'js-cookie';
 const initialState = {
     "Age": 0,
     "Systolic BP": 0,
@@ -34,10 +35,12 @@ export default function MaternalRiskAnalyzer() {
                 form[key] = form[key] === true ? 1 : 0;
             })
             const API_URL = import.meta.env.VITE_BACKEND_API_URL;
-            const response = await fetch(`${API_URL}model/maternalrisk/predict/`, {
+            const response = await fetch(`${API_URL}model/maternalrisk/predict`, {
                 method: 'POST',
                 headers: {
+                    'Accept': 'application/json',
                     'Content-Type': 'application/json',
+                    'Authorization': `${Cookie.get('token')}`,
                 },
                 body: JSON.stringify(form),
             });

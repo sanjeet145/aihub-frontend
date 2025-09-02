@@ -4,37 +4,27 @@ export default function Hub() {
     const models = [
         {
             "id": 1,
-            "model": "Maternal Risk",
-            "description": "this model will analys",
+            "modelName": "Maternal Risk",
+            "description": "Maternal Risk Model is a tool to predict the likelihood of pregnancy-related health risks based on clinical and lifestyle factors.",
+            "imgUrl": "assets/maternalrisk.jpg",
             "link": "/hub/maternal-risk-analyzer"
         },
         {
-            "id": 1,
-            "model": "sentimental",
+            "id": 2,
+            "modelName": "sentimental",
+            "description": "this model will analys",
+            "imgUrl": "assets/maternalrisk.jpg",
+            "link": "/"
+        },
+        {
+            "id": 3,
+            "modelName": "sentimental",
             "description": "this model will analys",
             "link": "/"
         },
         {
-            "id": 1,
-            "model": "sentimental",
-            "description": "this model will analys",
-            "link": "/"
-        },
-        {
-            "id": 1,
-            "model": "sentimental",
-            "description": "this model will analys",
-            "link": "/"
-        },
-        {
-            "id": 1,
-            "model": "sentimental",
-            "description": "this model will analys",
-            "link": "/"
-        },
-        {
-            "id": 1,
-            "model": "sentimental",
+            "id": 4,
+            "modelName": "sentimental",
             "description": "this model will analys",
             "link": "/"
         }
@@ -44,7 +34,7 @@ export default function Hub() {
             <div className="hub-heading"><h1>Welcome to hub</h1></div>
             <div className="model-cards">
                 {models.map(model => (
-                    <ModelCard props={model} />
+                    <ModelCard key={model.id} props={model} />
                 ))}
             </div>
         </>
