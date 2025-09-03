@@ -1,8 +1,8 @@
-import React, { use, useState } from 'react'
-import { Link, Navigate } from 'react-router-dom'
+import React, {  useState } from 'react'
+import { Link,  useNavigate } from 'react-router-dom'
 
 export default function RegisterCard() {
-    const navigate = Navigate();
+    const navigate = useNavigate();
     const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState({
         "username": "",
@@ -40,6 +40,7 @@ export default function RegisterCard() {
             const response = await fetch(`${API_URL}auth/register/`, {
                 method: "POST",
                 headers: {
+                    "Accept": "application/json",
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify(formData)
@@ -57,10 +58,10 @@ export default function RegisterCard() {
     }
     return (
         <>
-            <div class="container">
+            <div className="container">
                 <img src="/images/anime.png" alt="image" />
-                <div class="card">
-                    <div class="register">
+                <div className="card">
+                    <div className="register">
                         <h1>Register</h1>
                         <form id="signupForm">
                             <label htmlFor="username">Username</label>
@@ -75,7 +76,7 @@ export default function RegisterCard() {
                             <input type="password" id="password" name="password" onChange={(e) => setCfmpasswd(e.target.value)} />
                             <label htmlFor="cfmpswd">Re-Type Password</label>
                             <input type="password" id="cfmpswd" onChange={handleForm} />
-                            <div class="buttons">
+                            <div className="buttons">
                                 <button onClick={handleSubmit}>{loading ? "Loading..." : "Register"}</button>
                             </div>
                         </form>

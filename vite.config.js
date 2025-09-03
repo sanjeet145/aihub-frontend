@@ -7,6 +7,9 @@ export default defineConfig({
     allowedHosts: ['aihub-oa8q.onrender.com'],
     host: '0.0.0.0',  
     port: 3000       
+  },
+  headers: {
+    "Content-Security-Policy": "script-src 'self' https://aihub-oa8q.onrender.com"
   }
 });
 

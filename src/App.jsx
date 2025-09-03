@@ -1,8 +1,6 @@
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import Profile from "./components/Profile";
-import Hub from "./components/Hub";
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import ProtectedRoute from "./ProtectedRoute/ProtectedRoute";
