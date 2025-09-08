@@ -11,23 +11,11 @@ export default function Hub() {
         },
         {
             "id": 2,
-            "modelName": "sentimental",
-            "description": "this model will analys",
-            "imgUrl": "assets/maternalrisk.jpg",
-            "link": "/"
+            "modelName": "Sentimental Analysis",
+            "description": "This model will analyse sentiments in text.",
+            "imgUrl": "assets/sentimental-analysis.jpg",
+            "link": "/hub/sentimental-analysis"
         },
-        {
-            "id": 3,
-            "modelName": "sentimental",
-            "description": "this model will analys",
-            "link": "/"
-        },
-        {
-            "id": 4,
-            "modelName": "sentimental",
-            "description": "this model will analys",
-            "link": "/"
-        }
     ]
     return (
         <>
