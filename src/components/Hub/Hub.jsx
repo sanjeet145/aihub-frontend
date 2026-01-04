@@ -16,6 +16,20 @@ export default function Hub() {
             "imgUrl": "assets/sentimental-analysis.jpg",
             "link": "/hub/sentimental-analysis"
         },
+        {
+            "id": 3,
+            "modelName": "Translator",
+            "description": "This model will translate in text.",
+            "imgUrl": "assets/sentimental-analysis.jpg",
+            "link": "/hub/translator"
+        },
+        {
+            "id": 4,
+            "modelName": "Pdf Analzer RAG",
+            "description": "This is RAG based model for asking from pdf",
+            "imgUrl": "assets/sentimental-analysis.jpg",
+            "link": "/hub/pdfanalyzer"
+        },
     ]
     return (
         <>

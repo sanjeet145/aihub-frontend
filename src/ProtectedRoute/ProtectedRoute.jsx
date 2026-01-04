@@ -3,8 +3,10 @@ import { useIsAuthenticated } from "../context/AuthContext";
 import Profile from "../components/Profile";
 import Hub from "../components/Hub";
 import NotFound from "../notFound";
-import MaternalRiskAnalyzer from "../components/MaternalRiskAnalyzer";
-import SentimentalAnalysis from "../components/SentimentalAnalysis";
+import MaternalRiskAnalyzer from "../components/models/MaternalRiskAnalyzer";
+import SentimentalAnalysis from "../components/models/SentimentalAnalysis";
+import Translator from "../components/models/Translator";
+import PdfAnalyzer from "../components/models/PdfAnalyzer";
 
 const ProtectedRoute = () => {
   const isAuthenticated = useIsAuthenticated();
@@ -20,6 +22,8 @@ const ProtectedRoute = () => {
       </Route>
       <Route path="hub/maternal-risk-analyzer" element={<MaternalRiskAnalyzer/>}/>
       <Route path="hub/sentimental-analysis" element={<SentimentalAnalysis/>}/>
+      <Route path="hub/translator" element={<Translator/>}/>
+      <Route path="hub/pdfanalyzer" element={<PdfAnalyzer/>}/>
       <Route path="*" element={<NotFound/>}>
       </Route>
     </Routes>
